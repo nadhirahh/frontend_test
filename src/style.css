@@ -1,0 +1,295 @@
+:root {
+  font-family: "Lexend Deca","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.cursor-style {
+  cursor: pointer;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  font-family: "Lexend Deca","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url('src/assets/bg-gif.gif');
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.modal-confirmation {
+  background-color: rgb(253, 225, 183, 0.9);
+  border-radius: 6px;
+  padding: 10px;
+  width: 400px;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transition styles */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
+.card {
+  padding: 2em;
+}
+
+.button-modal {
+  display: flex;
+  justify-content:end;
+  gap: 8px;
+}
+
+.modal-title {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modal-confirmation-content {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  padding-left:30px;
+}
+
+.cancel-button {
+  width:100px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: rgb(255, 51, 51, 0.8);
+}
+
+.cancel-button:hover {
+  width:100px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: rgb(255, 51, 51, 0.9);
+  border: none;
+}
+
+.confirm-button {
+  width:110px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: rgb(0, 152, 0, 0.8);
+}
+
+.confirm-button:hover {
+  width:110px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(0, 152, 0, 0.8);
+}
+
+.input-width {
+  width: 50%;
+}
+
+.save-button {
+  border-radius: 6px;
+  width: 50px;
+  height: 40px;
+  background-color: rgb(100, 151, 177, 0.5);
+  transition: background-color 0.3s, border-color 0.3s;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: rgb(80, 131, 157);
+  border-color: rgb(60, 111, 137);
+  color: white;
+}
+
+.delete-button {
+  border-radius: 6px;
+  width: 50px;
+  height: 40px;
+  background-color: rgb(243, 32, 19, 0.4);
+  transition: background-color 0.3s, border-color 0.3s;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: rgb(243, 32, 19, 0.9);
+  /* border-color: rgb(60, 111, 137); */
+  color: white;
+}
+
+.custom-table {
+  --bs-table-bg: transparent !important;
+  --bs-table-color: white !important;
+}
+
+.row-table:hover {
+ background-color:rgb(0, 0, 0, 0.1) ;
+}
+
+.pagination {
+  display: d-flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.date-style {
+  font-size: 12px;
+  color: white;
+  display: flex;
+}
+
+.cursor-style {
+  transition: transform 0.3s, color 0.3s;
+  /* Smooth transition for scale and color */
+}
+
+.cursor-style:hover {
+  transform: scale(1.1);
+  /* Scale the icon up slightly */
+}
+
+
+.text-shadow-effect {
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgb(102, 255, 255, 0.3);  /* horizontal offset, vertical offset, blur radius, and color */
+}
+
+.custom-input {
+  width: 90%;
+  border: none;               /* Remove all borders */
+  outline: none;              /* Remove the focus outline */
+  background: transparent;    /* Ensure no background */
+  border-bottom: 1px solid white; /* Add a bottom border of white color */
+  padding: 10px 0;            /* Some padding for aesthetics */
+  color: white;               /* Set the text color to white for visibility */
+}
+
+.custom-date input {
+  border: none !important;               /* Remove all borders */
+  outline: none !important;              /* Remove the focus outline */
+  background: transparent !important;    /* Ensure no background */
+  padding: 10px 0 !important;            /* Some padding for aesthetics */
+  color: white !important;               /* Set the text color to white for visibility */
+}
+
+.dp__icon {
+  display: none !important;
+}
+
+.custom-input::placeholder {
+  color: white;                /* Placeholder text is white */
+  opacity: 1;                  /* Make placeholder fully opaque */
+}
+
+/* Optional: You can also add a focus effect to change the bottom border color when input is focused */
+.custom-input:focus {
+  border-bottom-color: #cccccc; /* Change to any color you prefer when focused */
+}
+
+.table-task {
+  font-weight: 700;
+  display: flex;
+}
+
+.layout-style {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(152, 76, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+
+}
+
+#app {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
